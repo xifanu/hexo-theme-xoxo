@@ -7,9 +7,9 @@ menu:
   home: /
   archives: /archives
   tags: /tags
-  #categories: /categories
+  # categories: /categories
   search: /search
-  about: https://0xff000000.com
+  about: /about
   rss: /atom.xml
 
 # Miscelaneous
@@ -30,6 +30,38 @@ scripts:
 show_excerpt: true
 show_date: true
 #footer
-index_page: https://blog.0xff000000.com
-main_site: https://0xff000000.com
-github: https://github.com/KevinOfNeu
+index_page: https://xifanu.github.io
+main_site: https://xifanu.github.io
+github: https://github.com/xifanu
+
+search:
+  path: search.xml
+  field: post
+  content: true
+
+#RSS feed https://github.com/hexojs/hexo-generator-feed
+feed:
+  type: atom
+  path: atom.xml
+  limit: 20
+  hub:
+  content_limit: 140
+
+sitemap:
+    path: sitemap.xml
+
+# disqus_shortname: XXX
+# baidu_analytics: xxx
+
+
+# # 1、Valine[一款快速、简洁且高效的无后端评论系统](https://github.com/xCss/Valine)
+# # 启用Valine必须先创建leancloud应用， 获取 id|key 填入即可
+# leancloud:  
+#   enable: true
+#   app_id: 1Nkh6N4UJhwPyNfgDqhR3cUA-gzGzoHsz
+#   app_key: Spm1BsTgetPLm3s6bxgqaW0E
+# # Valine配置
+# valine:
+#   enable: true # 是否启用
+#   avatar: mp # 头像样式(https://valine.js.org/avatar.html)
+#   placeholder: 给我的文章加点评论吧~ # placeholder
